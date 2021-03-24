@@ -7,7 +7,7 @@ def addContact
     print "Name: "
     name = gets.chomp
     print "Age: "
-    age = gets.chomp.to_int
+    age = gets.chomp.to_i
     print "Location: "
     location = gets.chomp
 
@@ -21,12 +21,13 @@ end
 def listContacts
     print("\n")
     for i in 0..$contacts.length - 1
-        puts "Name: #{$contacts[i]["name"]}\nAge: #{$contacts[i]["age"]}\nLocation: #{$contacts[i]["location"]}\n"
+        puts "Name: #{$contacts[i]["name"]}\nAge: #{$contacts[i]["age"]}\nLocation: #{$contacts[i]["location"]}\n\n"
     end 
     print("\n")
 end
 
-def getContact(name.capitalize)
+def getContact(name)
+    name = name.capitalize
     found = false
     for i in 0..$contacts.length - 1
         if $contacts[i]["name"] == name
