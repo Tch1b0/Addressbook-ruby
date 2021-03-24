@@ -6,7 +6,12 @@
   },
   {
     "name": "Alfred",
-    "age": "52",
+    "age": 52,
     "location": "Great Britian"
+  },
+  {
+    "name": "Paul",
+    "age": 12,
+    "location": "Hawaii"
   }
 ]
