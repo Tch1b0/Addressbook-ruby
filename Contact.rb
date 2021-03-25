@@ -8,6 +8,6 @@ class Contact
         puts("Name: #{@name}\nAge: #{@age}\nLocation: #{@location}")
     end
     def asHash
-        return {:name => @name, :age => @age, :location => @location}
+        return {"name" => @name, "age" => @age, "location" => @location}
     end
 end
